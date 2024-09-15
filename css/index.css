@@ -80,6 +80,65 @@
     color: rgb(51, 51, 51);
 }
 
+/*el main*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: absolute;
+    margin-left: 330px;
+}
+
+.inicio{
+    margin: 12rem 2rem 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.inicio__titulo1{
+    color: #fff;
+    margin: 0;
+    padding: 0%;
+}
+
+.inicio__titulo3{
+    color: #fff;
+}
+
+.inicio__titulo2{
+    color: var(--lima);
+    margin-left: 10px;
+}
+
+.inicio__nombre{
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+}
+
+.inicio__texto{
+    color: #fff;
+}
+
+.inicio__link{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(70, 70, 70);
+    border-radius:15px;
+    padding: 6px 15px 6px 15px;
+}
+
+.icono{
+    color: var(--lima);
+    margin-left: 1px;
+}
+
 /* para guardar los colores que vamos a usar a lo largo de los proyectos  */
 :root {
     --lima: rgb(185, 255, 81);
