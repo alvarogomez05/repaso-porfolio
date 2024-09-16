@@ -2,145 +2,309 @@
     font-family: fuente;
     src: url(../assets/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
 }
-
-.body {
-    max-width: 100%;
-    min-width: 600px;
-    margin: 0;
-    padding: 0;
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: fuente;
 }
-
-.container {
-    max-width: 100%;
-    min-width: 600px;
+body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: row;
+    background-color: rgb(20,20,20);
 }
-
-.container__fijo {
-    margin: 0;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* posicionamiento */
+/*parte fija*/
+.container_izq {
+    width: 350px;
+    height: 100%;
+    background-color: rgb(40,40,40);
     position: fixed;
     top: 0;
-    left: 0;
-    max-width: 300px;
-    width: 300px;
-    height: 100%;
-    /* estetica */
-    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
-
-.container__fijo__img {
+.img1 {
+    border: 8px solid var(--lima);
     border-radius: 100%;
     width: 100px;
-
-    border: 10px solid var(--lima);
 }
-
-.container__fijo__nombre {
-    margin: 15px 0 0 0;
-    color: var(--blanco);
-}
-
-.container__fijo__titulacion {
+.nombre {
     margin: 0;
-    color: var(--blanco);
-    font-variant: small-caps;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.7rem;
 }
-
-.container__fijo__botones {
+.estudios {
+    margin: 0;
+    color: white;
+    font-size: 1.4rem;
+}
+.caja_botones {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 15px;
-}
-
-.boton__link {
-    background-color: rgb(70, 70, 70);
-    padding: 1rem;
+    margin-top: 20px;
     width: 100%;
+}
+.botones {
     text-decoration: none;
-    color: var(--blanco);
-    margin-top: 10px;
-    border-radius: 5px;
     text-align: center;
 }
-
-.boton__link:hover{
+.texto_boton {
+    color: white;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(59, 59, 59);
+}
+.texto_boton:hover {
+    color: black;
     background-color: var(--lima);
-    color: rgb(51, 51, 51);
+}
+.container {
+    margin-left: 450px;
+    display: flex;
+    flex-direction: column;
 }
 
-/*el main*/
-
-.main{
+.section{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+/*inicio*/
+.inicio {
+    margin-top: 350px;
+}
+.caja_titulo {
+    display: flex;
+    align-items: center;
+}
+.titulo1 {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
+.texto {
+    color: white;
+    font-size: 1.4rem;
+}
+.texto_verde {
+    margin-left: 12px;
+    color: var(--lima);
+}
+.texto1 {
+    color: white;
+}
+.texto2 {
+    font-size: 0.8rem;
+    color: white;
+}
+.caja_boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(70,70,70);
+    background-color: rgb(70,70,70);
+    border-radius: 2rem;
+    width: 170px;
+}
+.caja_boton:hover {
+    color: black;
+    background-color: var(--lima);
+}
+.iconos {
+    margin-left: 10px;
+    color: var(--lima);
+}
+/*sobre mi */
+.sobremi {
+    margin-top: 350px;
+}
+.container_articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.datos_pers {
+    max-width: 400px;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.caja_texto {
+    display: flex;
+    width: 270px;
+    justify-content: start;
+}
+.texto_datos_pers {
+    font-size: 1rem;
+}
+.texto2 {
+    color: white;
+    font-size: 1rem;
+}
+.cards {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 1px solid rgb(36, 35, 35);
+    background-color: rgb(36, 35, 35);
+    width: 170px;
+    height: 120px;
+}
+.texto__verde {
+    margin-top: 20px;
+}
+/*formacion*/
+.container_formacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 5rem;
+}
+.fechas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(59, 59, 59);
+    border-radius: 2rem;
+    width: 120px;
+}
+.formacion {
+    margin-top: 40px;
+    border-left: 2px solid var(--lima);
+    width: 350px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    position: absolute;
-    margin-left: 330px;
+    text-align: center;
+}
+.container_texto_formacion {
+    margin-left: 15px;
+}
+.title_formacion {
+    color: var(--lima);
+    font-size: 1.2rem;
+}
+.texto_formacion {
+    font-size: 1rem;
+}
+.caja_birrete {
+    position: relative;
+    top: -30px;
+    left: -175px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lima);
+    padding: 14px;
+    border-radius: 100%;
+}
+.birrete {
+    color: rgb(59, 59, 59);
+    font-size: 25px;
+}
+/*porfolio*/
+.container_porfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.proyectos{
+    margin-top: 40px;
+    width: 270px;
+    height: 200px;
+}
+.img_proyecto{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
 }
 
-.inicio{
-    margin: 12rem 2rem 4rem 2rem;
+
+/*Contacto*/
+.section_contacto{
+    margin-top: 20px;
+    padding-bottom: 9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    align-items: center;
+}
+.caja_contacto{
+
+        display: flex;
+        flex-direction: column;
+}
+
+.datos_contacto{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.formulario{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    gap: 10px;
 }
 
-.inicio__titulo1{
-    color: #fff;
-    margin: 0;
-    padding: 0%;
+.inputs{
+    height: 30px;
+    color: white;
+    border: 1px solid rgb(40,40,40);
+    background-color: rgb(40,40,40);
 }
-
-.inicio__titulo3{
-    color: #fff;
-}
-
-.inicio__titulo2{
+.inputs:focus{
+    outline: none;
     color: var(--lima);
-    margin-left: 10px;
+}
+.enviar{
+    color: white;
+    border: 1px solid rgb(40,40,40);
+
+    background-color: rgb(40,40,40);
+    border-radius: 2rem;
+    width: 170px;
+    height: 30px;
 }
 
-.inicio__nombre{
-    margin: 0;
-    padding: 0%;
-    display: flex;
-    flex-direction: row;
+.icono_enviar{
+    position: relative;
+    right: 60px;
 }
-
-.inicio__texto{
-    color: #fff;
-}
-
-.inicio__link{
-    text-decoration: none;
-    color: #fff;
-    background-color: rgb(70, 70, 70);
-    border-radius:15px;
-    padding: 6px 15px 6px 15px;
-}
-
-.icono{
-    color: var(--lima);
-    margin-left: 1px;
+.enviar:hover {
+    color: black;
+    background-color: var(--lima);
 }
 
 /* para guardar los colores que vamos a usar a lo largo de los proyectos  */
 :root {
     --lima: rgb(185, 255, 81);
     --blanco: #fff;
+}
+
+.introduccion_titulo{
+    display: flex;
 }

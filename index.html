@@ -1,51 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <title>Portfolio</title>
 </head>
-
-<body class="body">
-    <!-- contenedor donde metemos todas nuestras cossas -->
-    <div class="container">
-        <div class="container__fijo">
-            <img src="./assets/images/pic.jpg" alt="foto del dueño del porfolio" class="container__fijo__img">
-            <h1 class="container__fijo__nombre">Álvaro Gómez</h1>
-            <h2 class="container__fijo__titulacion">DAW2 Front-end Developer</h2>
-            <section class="container__fijo__botones">
-                <a href="" class="boton__link">Inicio</a>
-                <a href="" class="boton__link">Sobre mi</a>
-                <a href="" class="boton__link">Formacion</a>
-                <a href="" class="boton__link">Mis proyetcos (Mis cositas)</a>
-                <a href="" class="boton__link">Contacto</a>
-            </section>
+<body>
+    <div class="container_izq">
+        <img src="./assets/images/pic.jpg" alt="" class="img1">
+        <h1 class="nombre">Álvaro Gómez Cedenilla</h1>
+        <h2 class="estudios">DAW2 Front-End Developer</h2>
+        <div class="caja_botones">
+            <a href="#inicio" class="botones">
+                <p class="texto_boton">Inicio</p>
+            </a>
+            <a href="#sobre_mi" class="botones">
+                <p class="texto_boton">Sobre Mi</p>
+            </a>
+            <a href="#formacion" class="botones">
+                <p class="texto_boton">Formacion</p>
+            </a>
+            <a href="#porfolio" class="botones">
+                <p class="texto_boton">Mi Porfolio</p>
+            </a>
+            <a href="#contacto" class="botones">
+                <p class="texto_boton">Contacto</p>
+            </a>
         </div>
-        <main class="main">
-            <section class="inicio">
-                <h1 class="inicio__titulo1">HOLA!!!</h1>
-                <article class="inicio__nombre">
-                    <h2 class="inicio__titulo3">Soy</h2>
-                    <h2 class="inicio__titulo2">Álvaro Gómez</h2>
+    </div>
+    <div class="container">
+        <section class="inicio" id="inicio">
+            <h2 class="titulo1">
+                Hola!!!
+            </h2>
+            <div class="caja_titulo">
+                <p class="texto">Soy </p>
+                <p class="texto texto_verde">Álvaro Gómez Cedenilla</p>
+            </div>
+            <p class="texto1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur animi dolore ullam, laborum autem quae perferendis dicta reiciendis similique, accusantium inventore delectus voluptatibus porro praesentium quod ratione fugit, explicabo suscipit!</p>
+            <p class="texto1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ea a error
+                numquam iusto pariatur itaque illo dolorem, mollitia doloribus reprehenderit reiciendis laboriosam rem
+                aperiam quas culpa! Veritatis, modi dignissimos?</p>
+            <div class="caja_boton">
+                <p class="texto2">Sobre mi</p>
+                <i class="home__fas fas fa-user iconos"></i>
+            </div>
+        </section>
+        <section class="section sobremi" id="sobre_mi">
+            <div class="introduccion_titulo">
+                <h2 class="titulo1 ">Sobre </h2>
+                <h2 class="titulo1 texto_verde">mi</h2>
+            </div>
+            <div class="container_articles">
+                <article class="datos_pers">
+                    <div class="caja_texto">
+                        <p class="texto texto_datos_pers">Nombre:</p>
+                        <p class="texto texto_datos_pers texto_verde">Álvaro Gómez Cedenilla</p>
+                    </div>
+                    <div class="caja_texto">
+                        <p class="texto texto_datos_pers">Edad:</p>
+                        <p class="texto texto_datos_pers texto_verde">18</p>
+                    </div>
+                    <div class="caja_texto">
+                        <p class="texto texto_datos_pers">Formación:</p>
+                        <p class="texto texto_datos_pers texto_verde">Técnico Superior DAW</p>
+                    </div>
+                    <div class="caja_texto">
+                        <p class="texto texto_datos_pers">Perfil:</p>
+                        <p class="texto texto_datos_pers texto_verde">Front-End</p>
+                    </div>
+                    <div class="caja_texto">
+                        <p class="texto texto_datos_pers">Idioma:</p>
+                        <p class="texto texto_datos_pers texto_verde">Inglés</p>
+                    </div>
+                    <div class="caja_texto">
+                        <p class="texto texto_datos_pers">Hobbies:</p>
+                        <p class="texto texto_datos_pers texto_verde">Cazar gamusinos</p>
+                    </div>
+                    <div class="caja_boton">
+                        <p class="texto2">Descarga mi CV</p>
+                        <i class="aboutdata__fas fas fa-download iconos"></i>
+                    </div>
                 </article>
-                <p class="inicio__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-                    nesciunt, commodi ullam voluptatem, ipsam molestiae impedit</p>
-                <p class="inicio__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem
-                    necessitatibus ea corporis incidunt placeat eum earum eveniet nam porro! Facere, atque
-                    voluptatem odio accusamus temporibus repudiandae cumque ea? Maxime?
-                    At fuga quasi vero rem, repellat maxime odio, sit, quos fugiat nam minima quisquam tempore
-                    ducimus similique ad eligendi explicabo laudantium. Quod libero aliquam consectetur molestias
-                    quibusdam corrupti esse id?
-                   </p>
-                   <a href="" class="inicio__link">Sobre mi <i class="home__fas fas fa-user icono"></i>
-                   </a>
-            </section>
-        </main>
+                <article class="cards">
+                    <div class="card">
+                        <p class="titulo1 texto__verde texto_verde">2+</p>
+                        <p class="texto2 ">Años de Experiencia</p>
+                    </div>
+                    <div class="card">
+                        <p class="titulo1 texto__verde texto_verde">125+</p>
+                        <p class="texto2 ">Proyectos Realizados</p>
+                    </div>
+                    <div class="card">
+                        <p class="titulo1 texto__verde texto_verde">30+</p>
+                        <p class="texto2 ">Clientes</p>
+                    </div>
+                    <div class="card">
+                        <p class="titulo1 texto__verde texto_verde">2+</p>
+                        <p class="texto2 ">Premios Ganados</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section " id="formacion">
+            <div class="introduccion_titulo">
+                <h2 class="titulo1 ">Mi </h2>
+                <h2 class="titulo1 texto_verde">Formación</h2>
+            </div>
+            <div class="container_formacion">
+                <div class="formacion">
+                    <div class="caja_birrete">
+                        <i class="fas fa-graduation-cap birrete"></i>
+                    </div>
+                    <div class="fechas">
+                        <p class="texto2">2022</p>
+                    </div>
+                    <div class="container_texto_formacion">
+                        <h3 class="title_formacion">
+                            Bootcamp FullStack Developer
+                        </h3>
+                        <p class="texto texto_formacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                            deleniti officia
+                            corporis, quaerat laborum temporibus iste possimus impedit voluptas velit animi aperiam ut
+                            eligendi nulla sint explicabo aut sit veritatis.</p>
+                    </div>
+                </div>
+                <div class="formacion">
+                    <div class="caja_birrete">
+                        <i class="fas fa-graduation-cap birrete"></i>
+                    </div>
+                    <div class="fechas">
+                        <p class="texto2">2021</p>
+                    </div>
+                    <div class="container_texto_formacion">
+                        <h3 class="title_formacion">
+                            Introduccion a JavaScript
+                        </h3>
+                        <p class="texto texto_formacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                            deleniti officia
+                            corporis, quaerat laborum temporibus iste possimus impedit voluptas velit animi aperiam ut
+                            eligendi nulla sint explicabo aut sit veritatis.</p>
+                    </div>
+                </div>
+                <div class="formacion">
+                    <div class="caja_birrete">
+                        <i class="fas fa-graduation-cap birrete"></i>
+                    </div>
+                    <div class="fechas">
+                        <p class="texto2">2020</p>
+                    </div>
+                    <div class="container_texto_formacion">
+                        <h3 class="title_formacion">
+                            Curso de HTML y CSS
+                        </h3>
+                        <p class="texto texto_formacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                            deleniti officia
+                            corporis, quaerat laborum temporibus iste possimus impedit voluptas velit animi aperiam ut
+                            eligendi nulla sint explicabo aut sit veritatis.</p>
+                    </div>
+                </div>
+                <div class="formacion">
+                    <div class="caja_birrete">
+                        <i class="fas fa-graduation-cap birrete"></i>
+                    </div>
+                    <div class="fechas">
+                        <p class="texto2">2019</p>
+                    </div>
+                    <div class="container_texto_formacion">
+                        <h3 class="title_formacion">
+                            Técnicas Básicas HTML
+                        </h3>
+                        <p class="texto texto_formacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                            deleniti officia
+                            corporis, quaerat laborum temporibus iste possimus impedit voluptas velit animi aperiam ut
+                            eligendi nulla sint explicabo aut sit veritatis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="porfolio">
+            <div class="introduccion_titulo">
+                <h2 class="titulo1 ">Mi </h2>
+                <h2 class="titulo1 texto_verde">Porfolio</h2>
+            </div>
+            <div class="container_porfolio">
+               
+                <div class="proyectos">
+                    <img src="./assets/images/floristeria.png" alt="" class="img_proyecto">
+                </div>
+                <div class="proyectos">
+                    <img src="./assets/images/paris.png" alt="" class="img_proyecto">
+                </div>
+                <div class="proyectos">
+                    <img src="./assets/images/pasteleria.png" alt="" class="img_proyecto">
+                </div>
+                <div class="proyectos">
+                    <img src="./assets/images/mosca.png" alt="" class="img_proyecto">
+                </div>
+                <div class="proyectos">
+                    <img src="./assets/images/oscuro.png" alt="" class="img_proyecto">
+                </div>
+                <div class="proyectos">
+                    <img src="./assets/images/toledo.png" alt="" class="img_proyecto">
+                </div>
+                <div class="proyectos">
+                    <img src="./assets/images/claro.png" alt="" class="img_proyecto">
+                </div>
+            </div>
+        </section>
+        <section class="section " id="contacto">
+            <div class="introduccion_titulo">
+                <h2 class="titulo1 texto_verde">Contacto</h2>
+            </div>
+
+            <div class="section_contacto">
+                <div class="caja_contacto">
+                    <div class="datos_contacto">
+                        <i class="fas fa-envelope iconos"></i> 
+                        <p class="texto texto_formacion">alvaro.gomezcedenilla@riberadeltajo.es</p>
+                    </div>
+
+                    <div class="datos_contacto">
+                        <i class="fas fa-phone iconos"></i> 
+                        <p class="texto texto_formacion">627495408</p>
+                    </div>
+                    <div class="datos_contacto">
+                        <i class="fas fa-phone iconos"></i> 
+                        <p class="texto texto_formacion">+34 627495408</p>
+                    </div>
+                    <div class="datos_contacto">
+                        <i class="fas fa-map-marker-alt iconos"></i> 
+                        <p class="texto texto_formacion">Madrid, España</p>
+                    </div>
+                </div>
+                <form action="#" class="formulario">
+                        <input type="text" placeholder="Nombre" class="inputs" required>
+                        <input type="email" placeholder="Correo" class="inputs" required>
+                        <input type="text" placeholder="Proyecto" class="inputs" required>
+                        <textarea name="" id="" placeholder="Texto" style="width: 400px; height: 100px;" class="inputs"></textarea>
+
+                        <div class="boton_enviar">
+                            <input type="submit" value="Enviar" class="enviar">
+                            <i class="fas fa-paper-plane iconos icono_enviar"></i>
+                        </div>
+                </form>
+            </div>
+
+
+        </section>
     </div>
 </body>
-
 </html>
